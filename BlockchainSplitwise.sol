@@ -16,6 +16,7 @@ contract BlockchainSplitwise {
      * @param amount value of the IOU being sent to creditor
      */
     function add_IOU(address creditor, uint32 amount) public {
+        require (amount >= 0, "Amount should be a positive value.");
         
     }
     
